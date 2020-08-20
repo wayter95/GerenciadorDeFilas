@@ -1,0 +1,155 @@
+#page-row{
+
+}
+#page-row header{
+    width: 95vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 2px solid #000000;
+}
+#page-row main{
+    width: 95vw;
+    height: 85%;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-areas: "a r";
+}
+.attendance{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.attendance h1{
+    width: 500px;
+    margin-bottom: 10rem;
+}
+.attendance .titles{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font: 500 2.6rem Roboto;
+    margin-bottom: 1.6rem;
+}
+.attendance .titles label{
+   width: 20px;
+}
+.attendance .person{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font: 500 2.6rem Roboto;
+    margin-bottom: 10rem;
+}
+.attendance .person label{
+  color: rgb(255, 94, 0);
+  text-align: center;
+  width: 50px;
+}
+.attendance .person label +label{
+    color: rgb(23, 126, 40);
+}
+  .attendance .person label +label +label{
+    color: rgb(0, 68, 255);
+}
+.attendance .buttons{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.attendance .buttons button{
+  width: 100%;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  background: #179e06;
+  color: #ffffff;
+  border-radius: 2rem;
+  font: 300 2.4rem Roboto;
+  transition: opacity 0.2s;
+}
+.attendance .buttons button:hover{
+    opacity: 0.9;
+}
+.attendance .buttons button + button{
+    background: #0428ca;
+}
+.attendance .buttons button + button + button{
+    background: #ca0404;
+}
+.rows-content{
+    box-shadow: -0.8rem 0.5rem rgba(0, 0, 0, 0.2) ;
+    grid-area: r;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "t t" "p n";
+}
+.rows-content h1{
+    grid-area: t;
+    text-align: center;
+    border: 1px solid;
+}
+.pref{
+    grid-area: p;
+    border: 1px solid;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pref label {
+    font: 500 2.4rem Roboto;
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+}
+.norm{
+    grid-area: n;
+    border: 1px solid;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.norm label {
+    font: 500 2.4rem Roboto;
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+}
+#page-row footer{
+    position: relative;
+    width: 95vw;
+    height:5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    border-top: 2px solid #000000;
+}
+#page-row footer button{
+    width: 200px;
+    height: 40px;
+    margin: 10px 20px;
+    border: none;
+    background: #179e06;
+    color: #ffffff;
+    font: 500 2.6rem Roboto;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+#page-row footer button + button{
+    background: #0407a3;
+}
+#page-row footer button:hover{
+    opacity: 0.9;
+}

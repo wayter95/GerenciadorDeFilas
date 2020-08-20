@@ -1,0 +1,40 @@
+
+:root {
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+
+body {
+    background: #f0f0f0;
+  }
+  
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+  
+  body,
+  input,
+  button,
+  textarea {
+    font: 500 1.6rem Roboto;
+    color: var(--color-main);
+  }
+  ul{
+    list-style-type: none;
+  }
+  @media (min-width: 700px) {
+    :root {
+      font-size: 62.5%;
+    }
+  }
